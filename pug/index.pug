@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/Compiled-CSS/css/style.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        title Vertical Slider
+    body
+        section.slider-container
+            article.left-slide
+            
+                - const myStylesPink = {"background-color": "#fd3555"}
+                div(style=myStylesPink)
+                    h1 Nature flower
+                    p all in pink
+                
+                - const myStylesBlue = {"background-color": "#2a86ba"}
+                div(style=myStylesBlue)
+                    h1 Blue Sky
+                    p with it's mountains
+
+                - const myStylesGrey = {"background-color": "#252e33"}
+                div(style=myStylesGrey)
+                    h1 Lonely castle
+                    p in the wilderness
+
+                - const myStylesSunset = {"background-color": "#ffb866"}
+                div(style=myStylesSunset)
+                    h1 Flying eagle
+                    p in the sunset
+
+            article.right-slide
+
+                div(style="background-image: url('https://images.unsplash.com/photo-1657564793579-9d49d4d7257b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=60');")
+                div(style="background-image: url('https://images.unsplash.com/photo-1657311388556-eeff862b3471?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=60');")
+                div(style="background-image: url('hhttps://images.unsplash.com/photo-1657290225234-df49bcbeb2cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1400&q=60');")
+                div(style="background-image: url('https://images.unsplash.com/photo-1657313732485-1276d2c0201d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIxfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=1400&q=60');")
+
+            .action-buttons
+                button.down-button
+                    i.fa-solid.fa-arrow-down
+                button.up-button
+                    i.fa-solid.fa-arrow-up
+
+        script(src="/script.js")
